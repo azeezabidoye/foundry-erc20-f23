@@ -19,4 +19,23 @@ contract ManualToken {
     function balanceOf(address _owner) public view returns (uint256 balance) {
         return s_balances[_owner];
     }
+
+    function transfer(
+        address _to,
+        uint256 _value
+    ) public returns (bool success) {
+        require(_to != address(0), "ERC20: transfer to the zero address");
+        require(
+            s_balances[msg.sender] >= _value,
+            "ERC20: transfer amount exceeds balance"
+        );
+
+        // Deduct from sender
+        s_balances[msg.sender] -= _value;
+
+        // Add to recipient
+        s_balances[_to] += _value;
+
+        return true;
+    }
 }
