@@ -8,4 +8,9 @@ import {OurToken} from "../src/OurToken.sol";
 contract OurTokenTest is Test {
     OurToken public ourToken;
     DeployOurToken public deployer;
+
+    function setUp() public {
+        deployer = new DeployOurToken();
+        ourToken = deployer.run();
+    }
 }
