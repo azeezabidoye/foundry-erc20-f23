@@ -5,4 +5,7 @@ import {Test} from "forge-std/Test.sol";
 import {DeployOurToken} from "../script/DeployOurToken.s.sol";
 import {OurToken} from "../src/OurToken.sol";
 
-contract OurTokenTest is Test {}
+contract OurTokenTest is Test {
+    OurToken public ourToken;
+    DeployOurToken public deployer;
+}
