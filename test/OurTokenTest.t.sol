@@ -18,7 +18,11 @@ contract OurTokenTest is Test {
         deployer = new DeployOurToken();
         ourToken = deployer.run();
 
-        vm.prank(address(deployer));
-        ourToken.transfer(STARTING_BALANACE, bob);
+        vm.prank(address(msg.sender));
+        ourToken.transfer(bob, STARTING_BALANACE);
+    }
+
+    function testBobBalance() public {
+        assertEq(ourToken.balanceOf(bob), STARTING_BALANACE);
     }
 }
