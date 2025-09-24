@@ -1,66 +1,12 @@
-## Foundry
+# Intro to ERC20 & ERC Fundamentals
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Read More at Ethereum Documentation 👉 [eips.ethereum.org](https://eips.ethereum.org/EIPS/eip-20)
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- It is important we understand that, the Web3 and blockchain ecosystem is fundamentally democratic and open source.
+- As such, major blockchains like Bitcoin, Ethereum, Polygon, Avalanche often implement methods by which the community can submit suggestions for changes in methodologies and their standards.
+- These suggestions and opinions are typically known as `Improvement Proposals`.
+- NB: Improvement can be anything. They can be anything from a core blockchain update to some standard that is going to be a best practice for the entire community to adopt.
+- Therefore, in Ethereum, they are called `Ethereum Improvement Proposals (EIPs)`.
+- If a proposed `EIP` gets traction to warrant genuine consideration, then they will often generate `Request for Comments`.
+- These are known as `Ethereum Request for Comments (ERCs)`.
+- It is worthy to note that `EIPs` and `ERCs` are numbered chronologically i.e `ERC20` is the 20th request for comment that was created.

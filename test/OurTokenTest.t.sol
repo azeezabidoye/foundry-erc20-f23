@@ -22,7 +22,7 @@ contract OurTokenTest is Test {
         ourToken.transfer(bob, STARTING_BALANACE);
     }
 
-    function testBobBalance() public {
+    function testBobBalance() public view {
         assertEq(ourToken.balanceOf(bob), STARTING_BALANACE);
     }
 }
