@@ -18,5 +18,19 @@ Read More at 👉 [eips.ethereum.org](https://eips.ethereum.org/EIPS/eip-20)
 - This is an improvement proposal that talks about how to actually create token and create smart contract tokens.
 - `ERC20` are tokens that are deployed on-chain using the ERC20 Token Standard.
 - Basically ERC20 is a smart contract that actually represents a token...
-- ...be it a token or a smart contract, its both and its cool
+- ...be it a token or a smart contract, its both and its cool.
 - Tether, Chainlink, Unitoken and DAI are all examples of ERC20.
+
+### Why Make an ERC20?
+
+- Governance Token
+- Secure an underlying network
+- Create a synthetic asset
+- Or anything else
+
+### How to Build an ERC20 Token
+
+- All we need to do is to create a smart contract that follows the Token Standard.
+- By creating a smart contract that has the ERC20 functions such as; name, symbol function, decimal function etc.
+- We need to be able to transfer it as well as get to know the balance.
+- Some other improvements that are ERC20 compatible are ERC677 and ERC777.
